@@ -1,7 +1,23 @@
 aid: oneswoop
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oneswoop.png
 name: OneSwoop
-description: OneSwoop is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: OneSwoop is a UK car-buying and new-car price-comparison website, founded in 1999 and
+  based in Liverpool, England, that lets consumers compare prices on brand-new cars and buy them online
+  at a discount. It operates as a consumer-facing e-commerce and comparison property and publishes no
+  public developer platform, API, documentation, or SDK surface. Backed historically by Insight Partners
+  and other venture investors, it is tracked in the API Evangelist network as a company profile rather
+  than an API provider.
 url: https://raw.githubusercontent.com/api-evangelist/oneswoop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Automotive
+- Cars
+- Price Comparison
+- E-Commerce
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/oneswoop-domain-security.yml
 - type: Website
   url: http://www.oneswoop.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
